@@ -1,32 +1,35 @@
 # Jeopardy Board App
 
-This app generates a **Jeopardy-style game board** from a JSON configuration file.  
-By editing the JSON file you can easily customize the categories, questions, teams, and visual appearance of the board.
+This app generates a **Jeopardy-style game board** from a JSON configuration file.
+
+By editing the JSON file you can customize:
+
+- Categories
+- Questions
+- Teams
+- Visual appearance (colors, fonts, background)
 
 The configuration file is located at:
 
-`src/assets/data.json`
+```
+src/assets/data.json
+```
 
-The app reads this file at startup and automatically builds the Jeopardy board.
+The file already contains a **template configuration** that you can modify.
 
 ---
 
-# Configuration
+# Editing the Configuration
 
-The entire game is configured through a JSON file.
+Open:
 
-Example structure:
-
-```json
-{
-  "background-image": "assets/background-image.png",
-  "title": {...},
-  "card": {...},
-  "rest": {...},
-  "categories": [...],
-  "teams": [...]
-}
 ```
+src/assets/data.json
+```
+
+and edit the fields to match your game.
+
+The app reads this file at startup and automatically generates the board.
 
 ---
 
@@ -34,19 +37,23 @@ Example structure:
 
 ## Background
 
-```json
+```
 "background-image": "assets/background-image.png"
 ```
 
-Relative path to the background image used behind the board.
+Path to the background image used behind the board.
+
+The path should be **relative to the project**.
 
 ---
 
 ## Title
 
-Controls the appearance of the title displayed at the top of the board.
+Controls how the title at the top of the board looks.
 
-```json
+Example fields:
+
+```
 "title": {
   "title": "Jeopardy",
   "text-color": "#ffffff",
@@ -56,11 +63,9 @@ Controls the appearance of the title displayed at the top of the board.
 }
 ```
 
-Fields:
-
 | Field | Description |
 |------|-------------|
-| `title` | Text displayed as the main title |
+| `title` | The text shown as the main title |
 | `text-color` | Color of the title text |
 | `font` | Font used for the title |
 | `glow-color` | Color of the glow effect |
@@ -70,9 +75,9 @@ Fields:
 
 ## Card
 
-Controls how the question cards look on the board.
+Controls the appearance of the question cards.
 
-```json
+```
 "card": {
   "text-color": "#ffffff",
   "card-color": "#ffffff",
@@ -80,28 +85,24 @@ Controls how the question cards look on the board.
 }
 ```
 
-Fields:
-
 | Field | Description |
 |------|-------------|
 | `text-color` | Color of the text inside cards |
-| `card-color` | Background color of cards |
-| `font` | Font used for card text |
+| `card-color` | Background color of the cards |
+| `font` | Font used for the card text |
 
 ---
 
 ## Rest
 
-Controls styling for other UI elements such as labels or general text.
+Controls the styling of other UI text elements.
 
-```json
+```
 "rest": {
   "text-color": "#ffffff",
   "font": "San sarif"
 }
 ```
-
-Fields:
 
 | Field | Description |
 |------|-------------|
@@ -112,23 +113,23 @@ Fields:
 
 # Categories
 
-Categories define the **columns of the Jeopardy board**.
+Categories represent the **columns on the Jeopardy board**.
 
-```json
-"categories": [
-  {
-    "name": "Kategori 1",
-    "questions": [...]
-  }
-]
+Each category contains a name and a list of questions.
+
+Example:
+
 ```
-
-Fields:
+{
+  "name": "Kategori 1",
+  "questions": [...]
+}
+```
 
 | Field | Description |
 |------|-------------|
 | `name` | Name of the category |
-| `questions` | List of questions in that category |
+| `questions` | List of questions belonging to that category |
 
 ---
 
@@ -138,7 +139,7 @@ Each category contains multiple questions.
 
 Example:
 
-```json
+```
 {
   "value": 100,
   "field1": "Spørsmål 1",
@@ -147,31 +148,28 @@ Example:
 }
 ```
 
-Fields:
-
 | Field | Description |
 |------|-------------|
-| `value` | Point value for the question |
-| `type` | Determines how the question is interpreted |
-| `field1` | First content field (depends on type) |
-| `field2` | Second content field (depends on type) |
+| `value` | Point value shown on the board |
+| `type` | Determines how the content is interpreted |
+| `field1` | First content field |
+| `field2` | Second content field |
 
 ---
 
 # Question Types
 
-Each question can have one of three types.
+Each question must specify a `type`.  
+The meaning of `field1` and `field2` depends on this value.
+
+---
 
 ## Text
 
-Standard question/answer format.
+Standard question and answer.
 
-```json
-{
-  "type": "Text",
-  "field1": "Question",
-  "field2": "Answer"
-}
+```
+"type": "Text"
 ```
 
 | Field | Meaning |
@@ -183,20 +181,16 @@ Standard question/answer format.
 
 ## Link
 
-Displays a clickable link.
+Shows a clickable link.
 
-```json
-{
-  "type": "Link",
-  "field1": "https://example.com",
-  "field2": "Open resource"
-}
+```
+"type": "Link"
 ```
 
 | Field | Meaning |
 |------|--------|
 | `field1` | URL |
-| `field2` | Label shown on the board |
+| `field2` | Text label shown for the link |
 
 ---
 
@@ -204,18 +198,14 @@ Displays a clickable link.
 
 Displays an image.
 
-```json
-{
-  "type": "Image",
-  "field1": "assets/image.png",
-  "field2": "Image title"
-}
+```
+"type": "Image"
 ```
 
 | Field | Meaning |
 |------|--------|
 | `field1` | Relative path to the image |
-| `field2` | Caption or title |
+| `field2` | Title or caption |
 
 ---
 
@@ -223,7 +213,7 @@ Displays an image.
 
 Defines the teams participating in the game.
 
-```json
+```
 "teams": [
   "Team 1",
   "Team 2",
@@ -232,28 +222,13 @@ Defines the teams participating in the game.
 ]
 ```
 
-Each entry is the name of a team shown on the scoreboard.
-
----
-
-# Creating Your Own Board
-
-1. Open the configuration file:
-
-```
-src/assets/data.json
-```
-
-2. Edit the categories and questions.
-3. Adjust colors, fonts, or background if desired.
-4. Add or rename teams.
-5. Launch the app — the board will be generated automatically.
+Each entry is the name of a team shown in the scoreboard.
 
 ---
 
 # Notes
 
-- All file paths (images, links, etc.) should be **relative to the project**.
-- Colors use **standard hex color format** (`#ffffff`).
-- Fonts must be available on the system or supported by the app.
-- Changing the JSON file is enough to completely customize the board.
+- All file paths should be **relative paths**.
+- Colors use **hex color format** (for example `#ffffff`).
+- Fonts must exist on the system or be supported by the app.
+- Editing the JSON file is enough to fully customize the game board.
