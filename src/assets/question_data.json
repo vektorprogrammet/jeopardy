@@ -1,4 +1,12 @@
 {
+  "background-image": "assets/background-image.png",
+  "title": {
+    "title": "Jeopardy",
+    "text-color": "#ffffff",
+    "font": "San sarif",
+    "glow-color": "#ffffff",
+    "glow-strength": 0
+  },
   "categories": [
     {
       "name": "Kategori 1",
