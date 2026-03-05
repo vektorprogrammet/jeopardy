@@ -35,6 +35,8 @@ The app reads this file at startup and automatically generates the board.
 
 # Appearance Settings
 
+## Background
+
 The background image is not configured in the JSON file.
 
 The app always loads the background image from:
