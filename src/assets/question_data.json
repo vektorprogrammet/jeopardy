@@ -1,0 +1,49 @@
+{
+  "categories": [
+    {
+      "name": "Kategori 1",
+      "questions": [
+        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
+        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
+        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
+        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+      ]
+    },
+    {
+      "name": "Kategori 2",
+      "questions": [
+        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
+        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
+        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
+        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+      ]
+    },
+    {
+      "name": "Kategori 3",
+      "questions": [
+        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
+        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
+        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
+        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+      ]
+    },
+    {
+      "name": "Kategori 4",
+      "questions": [
+        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
+        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
+        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
+        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+      ]
+    },
+    {
+      "name": "Kategori 5",
+      "questions": [
+        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
+        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
+        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
+        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+      ]
+    }
+  ]
+}
