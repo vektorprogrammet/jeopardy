@@ -7,51 +7,66 @@
     "glow-color": "#ffffff",
     "glow-strength": 0
   },
+  "card": {
+    "text-color": "#ffffff",
+    "card-color": "#ffffff",
+    "font": "San sarif"
+  },
+  "rest": {
+    "text-color": "#ffffff",
+    "font": "San sarif"
+  },
   "categories": [
     {
       "name": "Kategori 1",
       "questions": [
-        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
-        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
-        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
-        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" }, 
+        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
+        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
+        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
       ]
     },
     {
       "name": "Kategori 2",
       "questions": [
-        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
-        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
-        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
-        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
+        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
+        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
+        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Link" }
       ]
     },
     {
       "name": "Kategori 3",
       "questions": [
-        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
-        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
-        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
-        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
+        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
+        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
+        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
       ]
     },
     {
       "name": "Kategori 4",
       "questions": [
-        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
-        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
-        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
-        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
+        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
+        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
+        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
       ]
     },
     {
       "name": "Kategori 5",
       "questions": [
-        { "value": 100, "question": "Spørsmål 1", "answer": "Svar 1" },
-        { "value": 200, "question": "Spørsmål 2", "answer": "Svar 2" },
-        { "value": 300, "question": "Spørsmål 3", "answer": "Svar 3" },
-        { "value": 400, "question": "Spørsmål 4", "answer": "Svar 4" }
+        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
+        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
+        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
+        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
       ]
     }
+  ],
+  "teams": [
+    "Team 1",
+    "Team 2",
+    "Team 3",
+    "Team 4"
   ]
 }
