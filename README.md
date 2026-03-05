@@ -35,15 +35,15 @@ The app reads this file at startup and automatically generates the board.
 
 # Appearance Settings
 
-## Background
+The background image is not configured in the JSON file.
 
-```
-"background-image": "assets/background-image.png"
-```
+The app always loads the background image from:
 
-Path to the background image used behind the board.
+src/assets/background-image.png
 
-The path should be **relative to the project**.
+The file must be named exactly:
+
+background-image.png
 
 ---
 
