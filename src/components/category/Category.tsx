@@ -1,5 +1,6 @@
 import Slot from "../slot/Slot";
 import "./Category.css";
+import data from "../../assets/data.json"
 
 type Question = {
     value: number;
@@ -16,7 +17,11 @@ interface CategoryProps {
 export default function Category({ name, questions }: CategoryProps) {
     return (
         <div className="category-container">
-        <h2>{name}</h2>
+        <h2 style={{
+        fontFamily: `${data.rest["font-family"]}`,
+        fontSize: `${data.rest["font-size"]}`,
+        color: `${data.rest["text-color"]}`
+        }}>{name}</h2>
 
         <div className="category-slots">
             {questions.map((q, i) => (

@@ -14,7 +14,6 @@ export default function App() {
       `0 0 ${strength * 6}px ${color}`,
       `0 0 ${strength * 7}px ${color}`,
     ];
-
     return layers.join(", ");
   }
 
@@ -22,7 +21,8 @@ export default function App() {
     <>
       <div className="header-container">
         <h1 className="header glow" style={{
-        font: `${data.title.font}`,
+        fontFamily: `${data.title["font-family"]}`,
+        fontSize: `${data.title["font-size"]}`,
         color: `${data.title["text-color"]}`,
         textShadow: makeGlow(data.title["glow-color"], data.title["glow-strength"]),
         }}>{data.title.title}</h1>

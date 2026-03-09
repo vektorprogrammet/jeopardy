@@ -2,18 +2,21 @@
   "title": {
     "title": "Jeopardy",
     "text-color": "#ffffff",
-    "font": "San sarif",
+    "font-family": "Arial, Helvetica, sans-serif",
+    "font-size": "3.7vw",
     "glow-color": "#ffffff",
     "glow-strength": 0.1
   },
   "card": {
     "text-color": "#ffffff",
     "card-color": "#ffffff",
-    "font": "San sarif"
+    "font-family": "Arial, Helvetica, sans-serif",
+    "font-size": "1vw"
   },
   "rest": {
     "text-color": "#ffffff",
-    "font": "San sarif"
+    "font-family": "Arial, Helvetica, sans-serif",
+    "font-size": "2vw"
   },
   "categories": [
     {
@@ -31,7 +34,7 @@
         { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
         { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
         { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
-        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Link" }
+        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
       ]
     },
     {
