@@ -7,7 +7,7 @@ interface SlotProps {
 	id: string,
 	type: string;
 	coverText: string;
-	field1: ReactNode;
+	field1: string;
 	field2: ReactNode;
 }
 
@@ -33,7 +33,14 @@ export default function Slot({ id, type, coverText, field1, field2 }: SlotProps)
 				<Challenge tag={field1} />
 			)}
 			{isChallengeVisible && type == "Link" && (
-				<Challenge tag={field2} />
+				<Challenge tag=
+					<button
+						className="new-page-button"
+						onClick={() => window.open(field1, "_blank", "noopener,noreferrer")}
+					>
+						{field2}
+					</button>
+				/>
 			)}
 		</div>
 	)

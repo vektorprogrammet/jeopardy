@@ -22,7 +22,7 @@
     {
       "name": "Kategori 1",
       "questions": [
-        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
+        { "value": 100, "field1": "https://www.vg.no/", "field2": "VG", "type": "Link" },
         { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
         { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
         { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
