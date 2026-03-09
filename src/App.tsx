@@ -40,7 +40,11 @@ export default function App() {
           />
         ))}
         <div className="points-category">
-          <h2>Poeng</h2> 
+          <h2 style={{
+              fontFamily: `${data.rest["font-family"]}`,
+              fontSize: `${data.rest["font-size"]}`,
+              color: `${data.rest["text-color"]}`,
+          }}>Poeng</h2> 
           <div className="points-container">
             {[{
               id: 1,
@@ -51,7 +55,11 @@ export default function App() {
             }, {
               id: 4,
             }].map((team) =>
-              <div className="points-slots">
+              <div className="points-slots" style={{
+                  fontFamily: `${data.card["font-family"]}`,
+                  fontSize: `${data.card["font-size"]}`,
+                  color: `${data.card["text-color"]}`,
+              }}>
                 <h3>Team {team.id}</h3>
                 <input type="text" name={`team${team.id}`} id={`team${team.id}`} />
               </div>)}

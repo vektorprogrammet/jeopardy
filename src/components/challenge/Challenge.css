@@ -32,6 +32,10 @@
     scale: 1.05;
 }
 
+.challenge-text {
+    margin-top: 15px;
+}
+
 .url {
     color: #fff;
     text-decoration: none;
