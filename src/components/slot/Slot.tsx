@@ -4,12 +4,14 @@ import Cover from "../cover/Cover"
 import './Slot.css'
 
 interface SlotProps {
-    id: string;
+    id: string,
+    type: string;
     coverText: string;
-    challengeText: ReactNode;
+    field1: ReactNode;
+    field2: ReactNode;
 }
 
-export default function Slot({ id, coverText, challengeText }: SlotProps) {
+export default function Slot({ id, type, coverText, field1, field2 }: SlotProps) {
 
     const [isChallengeVisible, setChallengeVisible] = useState<boolean>(() => {
         const cache = window.localStorage.getItem(id);
@@ -27,7 +29,7 @@ export default function Slot({ id, coverText, challengeText }: SlotProps) {
     return (
         <div className="slot-container" onClick={hideCover}>
             {!isChallengeVisible && <Cover text={coverText} />}
-            {isChallengeVisible && <Challenge tag={challengeText} />}
+            {isChallengeVisible && <Challenge tag={field1} />}
         </div>
     )
 }

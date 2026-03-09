@@ -1,13 +1,31 @@
 import Category from "./components/category/Category"
 import ResetButton from "./components/resetButton/ResetButton"
-import * as ChallengeLists from "./components/challenge/ChallengeLists"
 import './App.css'
+import data from "./assets/data.json"
 
 export default function App() {
+  function makeGlow(color: string, strength: number) {
+    const layers = [
+      `0 0 ${strength}px #fff`,
+      `0 0 ${strength * 2}px #fff`,
+      `0 0 ${strength * 3}px ${color}`,
+      `0 0 ${strength * 4}px ${color}`,
+      `0 0 ${strength * 5}px ${color}`,
+      `0 0 ${strength * 6}px ${color}`,
+      `0 0 ${strength * 7}px ${color}`,
+    ];
+
+    return layers.join(", ");
+  }
+
   return (
     <>
       <div className="header-container">
-        <h1 className="header glow">Halloween Jeopardy!</h1>
+        <h1 className="header glow" style={{
+        font: `${data.title.font}`,
+        color: `${data.title["text-color"]}`,
+        textShadow: makeGlow(data.title["glow-color"], data.title["glow-strength"]),
+        }}>{data.title.title}</h1>
 
         <div className="resetButton-container">
           <ResetButton />
@@ -15,28 +33,12 @@ export default function App() {
       </div>
 
       <div className="app-container">
-        {[
-          "Heksegryta",
-          "Ha-ha-halloween",
-          "Trick or treat?",
-          "Godteriskåla",
-          "Kostymefest"
-        ].map(
-          (title, i) => {
-            const challenges_list = [
-              ChallengeLists.heksegryta_challenges,
-              ChallengeLists.hahahalloween_challenges,
-              ChallengeLists.trick_or_treat_challenges,
-              ChallengeLists.godteriskala_challenges,
-              ChallengeLists.kostymefest_challenges
-            ];
-            return (
-              <>
-                <Category text={title} challenges={challenges_list[i]} />
-              </>
-            )
-          }
-        )}
+        {data.categories.map((category) => (
+          <Category
+            name={category.name}
+            questions={category.questions}
+          />
+        ))}
         <div className="points-category">
           <h2>Poeng</h2> 
           <div className="points-container">

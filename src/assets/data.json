@@ -1,11 +1,10 @@
 {
-  "background-image": "assets/background-image.png",
   "title": {
     "title": "Jeopardy",
     "text-color": "#ffffff",
     "font": "San sarif",
     "glow-color": "#ffffff",
-    "glow-strength": 0
+    "glow-strength": 0.1
   },
   "card": {
     "text-color": "#ffffff",
