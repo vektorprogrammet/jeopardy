@@ -20,30 +20,30 @@
   },
   "categories": [
     {
-      "name": "Kategori 1",
+      "name": "SKYT ELLER IKKE SKYT",
       "questions": [
-        { "value": 100, "field1": "https://www.vg.no/", "field2": "VG", "type": "Link" },
-        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
-        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
-        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
+        { "value": 100, "field1": "Du ser en fiendtlig soldat med gevær løpe mellom bygninger. Han skyter ikke akkurat nå, men du vet at enheten hans nettopp angrep patruljen din.", "field2": "Skyt. Forklaring: Han er identifisert stridende i pågående kamp, selv om han ikke skyter i akuratt dette øyeblikket.", "type": "Text" },
+        { "value": 200, "field1": "Du ser en mann på et tak med radio eller mobiltelefon. Etterretning sier at fienden bruker spottere til å dirigere morterild. Han ser på posisjonen din og snakker i telefonen, men du har ikke sett våpen.", "field2": "Ikke skyt. Forklaring: Mistanke alene er ikke nok til å identifisere ham som stridende. Du mangler bekreftelse på direkte deltakelse i kamp.", "type": "Text" },
+        { "value": 300, "field1": "En bil nærmer seg kontrollposten din. Du gir tydelige stopptegn. Den stopper ikke. Du ser en familie inni – to voksne og et barn – men bilen fortsetter å rulle sakte mot dere.", "field2": "Skyt. Forklaring: Kjøretøy kan brukes som våpen, også med sivile inni. Hvis bilen ignorerer gjentatte stoppordre og nærmer seg kritisk avstand, kan den anses som en overhengende trussel.", "type": "Text" },
+        { "value": 400, "field1": "Du har en fiendtlig soldat i siktet. Han sitter på bakken og holder et gevær. Han skyter ikke, men følger deg med blikket. Du vet ikke om han vurderer å overgi seg eller bare venter på riktig øyeblikk til å skyte.", "field2": "Skyt. Forklaring: Han er fortsatt bevæpnet og en aktiv stridende. Uten tydelig overgivelse (våpen kastet og hender opp) regnes han fortsatt som en legitim trussel.", "type": "Text" }
       ]
     },
     {
-      "name": "Kategori 2",
+      "name": "GEOGRAFI",
       "questions": [
-        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
-        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
-        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
-        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
+        { "value": 100, "field1": "Dette landet har Colloseum i hovedstaden", "field2": "Italia", "type": "Text" },
+        { "value": 200, "field1": "I dette landet er Dublin største by og hovedstad.", "field2": "Irland", "type": "Text" },
+        { "value": 300, "field1": "Dette tallet beskriver hvor mange tidssoner Russland har.", "field2": "11", "type": "Text" },
+        { "value": 400, "field1": "Dette landet er et vektormedlem i, hvis de er i Gaborone.", "field2": "Botswana", "type": "Text" }
       ]
     },
     {
-      "name": "Kategori 3",
+      "name": "KJENDISER SINE DYR",
       "questions": [
-        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
-        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
-        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
-        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
+        { "value": 100, "field1": "Dette eksotiske dyret holdt bokseren Mike Tyson som kjæledyr.", "field2": "Tiger", "type": "Text" },
+        { "value": 200, "field1": "Skuespilleren Reese Witherspoon eier to av dette dyreslaget, ved navn Honky og Tonky.", "field2": "Esler", "type": "Text" },
+        { "value": 300, "field1": "Dette var navnet på grisen som tilhørte Ariana Grande.", "field2": "Piggy Smallz", "type": "Text" },
+        { "value": 400, "field1": "Disse tre kattene tilhører superstjernen Taylor Swift.", "field2": "Meredith Grey, Olivia Benson og Benjamin Button", "type": "Text" }
       ]
     },
     {
@@ -56,12 +56,12 @@
       ]
     },
     {
-      "name": "Kategori 5",
+      "name": "GEN Z TERMINOLOGI",
       "questions": [
-        { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
-        { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
-        { "value": 300, "field1": "Spørsmål 3", "field2": "Svar 3", "type": "Text" },
-        { "value": 400, "field1": "Spørsmål 4", "field2": "Svar 4", "type": "Text" }
+        { "value": 100, "field1": "Dette slangordet beskriver en person som oppfører seg som en bakgrunnskarakter i egne tanker.", "field2": "NPC", "type": "Text" },
+        { "value": 200, "field1": "Dette slangordet brukes når en person oppfører seg som en litt gammel eller klein fyr i gruppa, selv om de ikke nødvendigvis er gamle.", "field2": "Unc", "type": "Text" },
+        { "value": 300, "field1": "Dette slanguttrykket brukes når noen gjør ting som får dem til å virke kulere eller mer imponerende i andres øyne, og dermed bygger opp sitt sosiale \"coolness-nivå\".", "field2": "Aura farming", "type": "Text" },
+        { "value": 400, "field1": "Dette slangordet når noen dominerer en annen person fullstendig i utseende, status eller selvtillit.", "field2": "Mogging", "type": "Text" }
       ]
     }
   ],
