@@ -42,6 +42,16 @@ export default function Slot({ id, type, coverText, field1, field2 }: SlotProps)
 					</button>
 				/>
 			)}
+			{isChallengeVisible && type == "Image" && (
+				<Challenge tag=
+					<button
+						className="new-page-button"
+						onClick={() => window.open(field1, "_blank", "noopener,noreferrer")}
+					>
+						IMAGE
+					</button>
+				/>
+			)}
 		</div>
 	)
 }

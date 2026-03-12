@@ -207,7 +207,7 @@ Displays an image.
 | Field | Meaning |
 |------|--------|
 | `field1` | Relative path to the image |
-| `field2` | Title or caption |
+| `field2` | Answer to task given in image |
 
 ---
 
