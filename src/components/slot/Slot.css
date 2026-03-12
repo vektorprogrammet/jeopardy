@@ -10,13 +10,11 @@
   cursor: pointer;
 }
 
-.new-page-button2 {
+.new-image-button {
     font-family: 'Times New Roman', Times, serif;
     font-variant: small-caps;
     font-size: large;
     color: white;
-
-    background-color: rgba(139, 0, 0, 0.8);
     width: 70%;
     height: 70%;
 

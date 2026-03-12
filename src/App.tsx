@@ -63,6 +63,20 @@ export default function App() {
               }}>
                 <h3>Team {team.id}</h3>
                 <input type="text" name={`team${team.id}`} id={`team${team.id}`} />
+                <div className="points-buttons">
+                  <button className="points-button" onClick={(e) => {
+                    e.stopPropagation();
+                    const input = document.getElementById(`team${team.id}`) as HTMLInputElement;
+                    const currentValue = parseInt(input.value) || 0;
+                    input.value = String(currentValue - 100);
+                  }}>-100</button>
+                  <button className="points-button" onClick={(e) => {
+                    e.stopPropagation();
+                    const input = document.getElementById(`team${team.id}`) as HTMLInputElement;
+                    const currentValue = parseInt(input.value) || 0;
+                    input.value = String(currentValue + 100);
+                  }}>+100</button>
+                </div>
               </div>)}
           </div>
         </div>

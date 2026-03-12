@@ -83,3 +83,29 @@
     text-align: center;
 }
 
+.points-buttons {
+    display: flex;
+    gap: 0.5vw;
+    justify-content: center;
+}
+
+.points-button {
+    background-color: transparent;
+    color: white;
+    border: 0.1vw solid white;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1vw;
+    font-size: 0.8vw;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.points-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.points-button:active {
+    transform: scale(0.95);
+}
+
