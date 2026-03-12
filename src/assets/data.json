@@ -11,12 +11,12 @@
     "text-color": "#ffffff",
     "card-color": "#36C5F3",
     "font-family": "Arial, Helvetica, sans-serif",
-    "font-size": "1vw"
+    "font-size": "0.8vw"
   },
   "rest": {
     "text-color": "#ffffff",
     "font-family": "Arial, Helvetica, sans-serif",
-    "font-size": "2vw"
+    "font-size": "1.5vw"
   },
   "categories": [
     {
@@ -34,7 +34,7 @@
         { "value": 100, "field1": "Dette landet har Colloseum i hovedstaden", "field2": "Italia", "type": "Text" },
         { "value": 200, "field1": "I dette landet er Dublin største by og hovedstad.", "field2": "Irland", "type": "Text" },
         { "value": 300, "field1": "Dette tallet beskriver hvor mange tidssoner Russland har.", "field2": "11", "type": "Text" },
-        { "value": 400, "field1": "Dette landet er et vektormedlem i, hvis de er i Gaborone.", "field2": "Botswana", "type": "Text" }
+        { "value": 400, "field1": "Dette er landet et vektormedlem er på utvekling i hvis de er i Gaborone", "field2": "Botswana", "type": "Text" }
       ]
     },
     {
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "name": "Kategori 4",
+      "name": "BARNE-TV",
       "questions": [
         { "value": 100, "field1": "Spørsmål 1", "field2": "Svar 1", "type": "Text" },
         { "value": 200, "field1": "Spørsmål 2", "field2": "Svar 2", "type": "Text" },
@@ -58,7 +58,7 @@
     {
       "name": "GEN Z TERMINOLOGI",
       "questions": [
-        { "value": 100, "field1": "Dette slangordet beskriver en person som oppfører seg som en bakgrunnskarakter i egne tanker.", "field2": "NPC", "type": "Text" },
+        { "value": 100, "field1": "Dette slangordet beskriver en person som oppfører seg som en bakgrunnskarakter uten egne tanker.", "field2": "NPC", "type": "Text" },
         { "value": 200, "field1": "Dette slangordet brukes når en person oppfører seg som en litt gammel eller klein fyr i gruppa, selv om de ikke nødvendigvis er gamle.", "field2": "Unc", "type": "Text" },
         { "value": 300, "field1": "Dette slanguttrykket brukes når noen gjør ting som får dem til å virke kulere eller mer imponerende i andres øyne, og dermed bygger opp sitt sosiale \"coolness-nivå\".", "field2": "Aura farming", "type": "Text" },
         { "value": 400, "field1": "Dette slangordet når noen dominerer en annen person fullstendig i utseende, status eller selvtillit.", "field2": "Mogging", "type": "Text" }

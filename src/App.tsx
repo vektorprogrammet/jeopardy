@@ -44,6 +44,7 @@ export default function App() {
               fontFamily: `${data.rest["font-family"]}`,
               fontSize: `${data.rest["font-size"]}`,
               color: `${data.rest["text-color"]}`,
+              height: "3vw",
           }}>Poeng</h2> 
           <div className="points-container">
             {[{

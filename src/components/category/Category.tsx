@@ -20,7 +20,8 @@ export default function Category({ name, questions }: CategoryProps) {
         <h2 style={{
         fontFamily: `${data.rest["font-family"]}`,
         fontSize: `${data.rest["font-size"]}`,
-        color: `${data.rest["text-color"]}`
+        color: `${data.rest["text-color"]}`,
+        height: "3vw",
         }}>{name}</h2>
 
         <div className="category-slots">
