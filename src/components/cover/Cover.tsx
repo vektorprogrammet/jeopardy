@@ -14,7 +14,7 @@ export default function Cover({ text }: CoverProps) {
             fontSize: `${data.card["font-size"]}`,
             color: `${data.card["text-color"]}`,
         }} className="cover-container">
-            <h3>{text}</h3>
+            <h3 className="cover">{text}</h3>
         </div>
     )
 }

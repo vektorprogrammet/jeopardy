@@ -6,6 +6,9 @@
   height: 100%;
   border-radius: 1.2vw;
   transition: 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cover-container:hover {
@@ -15,4 +18,9 @@
 .cover-container:active {
   filter: brightness(75%);
   scale: 1;
+}
+
+.cover {
+  margin: 0;
+  text-align: center;
 }

@@ -3,7 +3,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 1.2vw;
     display: flex;
     justify-content: center;
@@ -33,7 +33,9 @@
 }
 
 .challenge-text {
-    margin-top: 15px;
+    margin: auto;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
 }
 
 .url {
