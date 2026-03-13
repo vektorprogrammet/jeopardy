@@ -61,7 +61,7 @@
         { "value": 100, "field1": "Dette slangordet beskriver en person som oppfører seg som en bakgrunnskarakter uten egne tanker.", "field2": "NPC", "type": "Text" },
         { "value": 200, "field1": "Dette slangordet brukes når en person oppfører seg som en litt gammel eller klein fyr i gruppa, selv om de ikke nødvendigvis er gamle.", "field2": "Unc", "type": "Text" },
         { "value": 300, "field1": "Dette slanguttrykket brukes når noen gjør ting som får dem til å virke kulere eller mer imponerende i andres øyne, og dermed bygger opp sitt sosiale \"coolness-nivå\".", "field2": "Aura farming", "type": "Text" },
-        { "value": 400, "field1": "Dette slangordet når noen dominerer en annen person fullstendig i utseende, status eller selvtillit.", "field2": "Mogging", "type": "Text" }
+        { "value": 400, "field1": "Dette slangordet brukes når noen dominerer en annen person fullstendig i utseende, status eller selvtillit.", "field2": "Mogging", "type": "Text" }
       ]
     }
   ],
